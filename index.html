@@ -1,0 +1,2818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=auto, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+    href="https://raw.githubusercontent.com/Mayborg121/Synthwave/main/html.ico" >
+    <meta name="Keywords" content="HTML-only , Web,CSS,javascript , vanilla-CSS , vanilla-HTML, maybhtml00">
+    <meta name="description" content="HTML Only Website to better understand HTML concepts and Understand various HTML Tags.">
+    <title>HTML | Tutorial</title>
+    <base href="" target="_blank" > 
+    
+    <style>
+
+        *{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          margin: 5px;}
+        section{margin-top: 15px;}
+        
+        table, th, td {
+        border: 1px solid black;}
+
+        @media only screen and (min-width: 1300px) and (max-width: 2000px){
+            body{margin-right: 400px;}
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="color: white;background-color: black;padding-bottom: -5px;">HTML Tutorial</h1>
+    <p style="font-size: 0.85rem; margin-top: -5px;margin-left: 0px;"><a href="mailto:mayurborgude@gmail.com" style="margin: 0; text-decoration: none; color: black;"><span style="background-color: #00ff1e;">&nbsp;by Mayur Borgude&nbsp;</span></a></p>
+    <br>
+    <div>
+        <p>
+            Welcome to a personal project created during a summer holidays filled with curiosity and the desire to learn something new.
+
+        </p>
+        <p>
+            As someone who started learning HTML from scratch, I understand the excitement and challenges that come with it. Here, you'll find straightforward guides and practical examples that make learning HTML enjoyable and accessible.
+        </p>
+        <p>
+            So, take a moment to relax, maybe grab a cup of coffee, and enjoy the process of creating something awesome with HTML.  
+        </p>
+        <p style="color: #fd0026;">
+            * It's HTML-only page, NO fancy graphics. *
+        </p>
+        <p>
+            🧋💻 &nbsp;Let's explore...
+        </p>
+
+
+    </div>
+    <br>
+
+    <div>
+        <details>
+            <summary> Contents  </summary>
+            <nav>
+               <ol>
+                <li><a href="index.html#Introduction_to_HTML">Introduction</a></li>
+                <li><a href="index.html#Basic_Structure_of_HTML">Basic Structure of HTML</a></li>
+                <li><a href="index.html#Components_of_HTML_Document">Components of HTML</a></li>
+                <li><a href="index.html#HTML_Elements">HTML Elements</a></li>
+                <li>
+                    <details>
+                        <summary>HTML Tags</summary>
+                        <ol>
+                            <li><a href="index.html#Style_and_Semantics_tags">Style and Semantics Tags</a></li>
+                            <li><a href="index.html#Link_Tags">Link Tags</a></li>
+                            <li><a href="index.html#ImageTags">Image Tags</a></li>
+                            <li><a href="index.html#Audio/VideoTags">Audio/Video Tags</a></li>
+                            <li><a href="index.html#FormattingTags">Formatting Tags</a></li>
+                            <li><a href="index.html#ListTags">List Tags</a></li>
+                            <li><a href="index.html#TableTags">Table tags</a></li>
+                            <li><a href="index.html#FormTags">Form Tags</a></li>
+                            <li><a href="index.html#MetaInfoTags">MetaInfo Tags</a></li>
+                            <li><a href="index.html#ProgrammingTags">Programming Tags</a></li>
+                        </ol>
+                    </details>
+                </li>
+                <li><a href="index.html#HTML_Attributes">HTML Attributes</a></li>
+                <li><a href="index.html#HTML_Concepts">Misc.</a></li>
+                
+               </ol>
+            </nav>
+        </details>
+    </div>
+
+
+<br>
+</header>
+<hr>
+    <section id="Introduction_to_HTML">
+        <h1>Introduction to HTML</h1>
+        <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+
+        
+        <div >
+            <svg width="80px" height="80px" viewBox="0 0 73 73" version="1.1">
+    
+                <title>web-components/html-templates</title>
+                <desc>Created with Sketch.</desc>
+                <defs>
+            
+            </defs>
+                <g id="web-components/html-templates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="container" transform="translate(2.000000, 2.000000)" fill-rule="nonzero">
+                        <rect id="mask" stroke="#375E87" stroke-width="2" fill="#FFFFFF" x="-1" y="-1" width="71" height="71" rx="14">
+            
+            </rect>
+                        <g id="web-design" transform="translate(11.000000, 12.000000)">
+                            <path d="M42.1161565,44.5459286 C42.1161565,45.8879864 41.0284422,46.9757007 39.6863844,46.9757007 L7.28931633,46.9757007 C5.9472585,46.9757007 4.85954422,45.8879864 4.85954422,44.5459286 L4.85954422,2.42977211 C4.85954422,1.08771429 5.9472585,0 7.28931633,0 L39.6863844,0 C41.0284422,0 42.1161565,1.08771429 42.1161565,2.42977211 L42.1161565,44.5459286 Z" id="Shape" fill="#87CED9">
+            
+            </path>
+                            <path d="M39.6863844,46.9757806 L2.42977211,46.9757806 C1.08771429,46.9757806 0,45.8879864 0,44.5459286 L0,42.1161565 L37.2566122,42.1161565 L37.2566122,44.5459286 C37.2566122,45.8879864 38.3443265,46.9757806 39.6863844,46.9757806 Z" id="Shape" fill="#4398D1">
+            
+            </path>
+                            <rect id="Rectangle-path" fill="#FDA72F" x="0" y="12.9588112" width="16.198534" height="9.71908844">
+            
+            </rect>
+                            <path d="M4.28691156,19.456881 L2.66709014,17.8370595 C2.35119898,17.5211684 2.35119898,17.0076854 2.66709014,16.6917942 L4.28691156,15.0719728 L5.43217687,16.2172381 L4.38490816,17.2645068 L5.43217687,18.3116156 L4.28691156,19.456881 Z" id="Shape" fill="#FF8A3D">
+            
+            </path>
+                            <path d="M11.9116224,19.456881 L10.7663571,18.3116156 L11.8136259,17.2643469 L10.7663571,16.2170782 L11.9116224,15.0718129 L13.5314439,16.6916344 C13.847335,17.0075255 13.847335,17.5210085 13.5314439,17.8368997 L11.9116224,19.456881 Z" id="Shape" fill="#FF8A3D">
+            
+            </path>
+                            <rect id="Rectangle-path" fill="#FF8A3D" transform="translate(8.098304, 17.264943) rotate(-71.554180) translate(-8.098304, -17.264943) " x="5.53702631" y="16.4550523" width="5.12255456" height="1.61978168">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#4398D1" x="19.4382568" y="4.85954422" width="27.5375238" height="16.198534">
+            
+            </rect>
+                            <polygon id="Shape" fill="#3269A1" points="46.9757806 17.8183554 41.3062857 14.5787126 35.0520085 17.8183554 27.5375238 12.9588112 19.4382568 17.8183554 19.4382568 21.0580782 46.9757806 21.0580782">
+            
+            </polygon>
+                            <circle id="Oval" fill="#E34B87" cx="37.6616276" cy="10.1241037" r="2.02483673">
+            
+            </circle>
+                            <rect id="Rectangle-path" fill="#E34B87" x="8.09926701" y="25.9176224" width="20.2481276" height="9.71908844">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#BF3D75" x="10.5290391" y="28.3473946" width="3.23972279" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#BF3D75" x="15.3885833" y="28.3473946" width="7.28931633" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#BF3D75" x="24.297801" y="28.3473946" width="1.61982143" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#BF3D75" x="10.5290391" y="31.5871173" width="9.71908844" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#BF3D75" x="21.8680289" y="31.5871173" width="4.04959354" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#5EB3D1" x="7.28931633" y="2.42977211" width="1.61982143" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#5EB3D1" x="10.5290391" y="2.42977211" width="1.61982143" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#5EB3D1" x="13.7687619" y="2.42977211" width="1.61982143" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#5EB3D1" x="7.28931633" y="5.6694949" width="9.71908844" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#E34B87" x="31.5871173" y="29.1573452" width="15.3885833" height="9.71908844">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#BF3D75" x="34.0168895" y="31.5871173" width="1.61982143" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#BF3D75" x="34.0168895" y="34.8268401" width="1.61982143" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#BF3D75" x="37.2566122" y="31.5871173" width="7.28931633" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#BF3D75" x="37.2566122" y="34.8268401" width="7.28931633" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#71C4D1" x="21.0580782" y="21.0580782" width="21.0580782" height="1.61982143">
+            
+            </rect>
+                            <rect id="Rectangle-path" fill="#71C4D1" x="33.2070187" y="38.8765136" width="8.90921769" height="1.61982143">
+            
+            </rect>
+                            <polygon id="Shape" fill="#71C4D1" points="16.198534 14.5787126 16.198534 22.6779796 4.85954422 22.6779796 4.85954422 24.297801 17.8183554 24.297801 17.8183554 14.5787126">
+            
+            </polygon>
+                            <polygon id="Shape" fill="#71C4D1" points="28.3473946 27.5375238 28.3473946 35.6367908 9.71908844 35.6367908 9.71908844 37.2566122 29.9672959 37.2566122 29.9672959 27.5375238">
+            
+            </polygon>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+
+
+    </section>
+    <br>
+    <hr>
+    <section id="Basic_Structure_of_HTML">
+        <h3>Basic Structure of HTML Document</h3>
+        <p style="background-color:#fad4f6 ; font-family:sans-serif;">
+            <span><</span>!DOCTYPE html > <br>
+            <span><</span>html > <br>
+            <span><</span>head > <br>
+                <Span><</Span>title > Page Title<span><</span>/title > <br>
+            <span><</span>/head > <br>
+            <span><</span>body > <br>
+            <br>
+            <span><</span>h1 > My First Heading<span><</span>/h1 > <br>
+            <span><</span>p > My first paragraph.<span><</span>/p > <br>
+            <br>
+            <span><</span>/body > <br>
+            <span><</span>/html >
+        </p>
+        <br>
+        <h3>OUTPUT : </h3>
+
+        <div style="background-color:#a9edf1" >
+            <br>
+            <h1 style="font-family: 'Times New Roman', Times, serif;">My First Heading </h1>
+            <p style="font-family: 'Times New Roman', Times, serif;">My first paragraph.</p>
+            <br>
+        </div>
+
+    </section>
+    <br>
+    <hr>
+
+    <section id="Components_of_HTML_Document">
+        <h3>Components of HTML Document</h3>
+        <ol>
+            <li> 
+                <h3 style="color: #f14916;"><span><</span>!DOCTYPE<span>html ></span></h3>
+                <p>Defines that this document is an HTML5 document.All HTML documents must start with a document type declaration.</p>
+            </li>
+            <li>
+                <h3 style="color: #f14916;"><span><</span>html > ...<span><</span>/html ></h3>
+                <p>
+                    This element is the root element of an HTML page.
+                </p>
+            </li>
+            <li>
+                <h3 style="color: #f14916;"><span><</span>head > ...<span><</span>/head ></h3>
+                <p>
+                    This element contains meta information about the HTML page. like Title, Viewport, Charset, Style, etc.
+                </p>
+            </li>
+            <li>
+                <h3 style="color: #f14916;"><span><</span>title > ...<span><</span>title ></h3>
+                <p>
+                    This element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+                </p>
+            </li>
+            <li>
+                <h3 style="color: #f14916;"><span><</span>body > ...<span><</span>body ></h3>
+                <p>
+                    This element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+                </p>
+            </li>
+            <li>
+                <h3 style="color: #f14916;"><span><</span>h1 > ...<span><</span>h1 ></h3>
+                <p>
+                    This element defines the large Heading.
+                </p>
+            </li>
+            <li>
+                <h3 style="color: #f14916;"><span><</span>p > ...<span><</span>p ></h3>
+                <p>
+                    This element defines the Paragraph or text content.
+                </p>
+            </li>
+
+        </ol>
+    </section>
+    <br>
+    <hr>
+
+    <section id="HTML_Elements">
+        <h2> What is an HTML Element ?</h2>
+        <p style="margin-top: 15px;">An HTML element is defined by a start tag, some content, and an end tag:
+            <p style="color: rgb(10, 119, 169);">
+                <span><</span>tagname > ...<span><</span>/tagname >
+            </p>
+        The HTML element is everything from the start tag to the end tag. <br>
+            <p style="padding-left: 5px; background-color: #eba1cd;">
+                <span style="font-weight: bold;">Note:</span>
+                Some HTML elements have no content (like the<span style="color: rgb(3, 66, 66);font-weight: bold;"><span><</span>br ></span>element). These elements are called empty elements. Empty elements do not have an end tag
+            </p>
+        </p>
+    </section>
+    <br>
+    <hr>
+
+    <section id="HTML_Tags" >
+        <h2>HTML | Tags</h2>
+        <div id="Style_and_Semantics_tags" style="padding: 0; margin: 0;">
+            <h3>Style and Semantics tags -</h3>
+            <ol style="margin-left: -20px;margin-top: 10px;">
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>style > ... <span><</span>/style >
+                    </h3>
+                    <div>
+                        <p>Defines the Style (information CSS) information of the documents. it is included in "head" tag </p>
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            <span><</span>style > <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1{color: rgb(9, 82, 146) ;} <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p{color: blue;} <br>
+                            <span><</span>/style >
+                        </p>
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>span > ... <span><</span>/span >
+                    </h3>
+                    <div>
+                        <p>It is an inline container used to mark up  a text or a part of document. </p>
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            <span><</span>span > MayBorg
+                            <span><</span>/span >
+                        </p>
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>header > ... <span><</span>/header >
+                    </h3>
+                    <div>
+                        <p>
+                            Represents a container for introductory content or a set of navigational links.the hgroup tag is used inside header to group headings and "p" elements to style later using CSS. It typically contains :
+                            <ul style="font-size:0.85rem;">
+                                <li>one or more heading elements</li>
+                                <li>Logo or Icon</li>
+                                <li>Authorship information.</li>
+                            </ul> 
+                        </p>
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            <span><</span>header > <br> <br> 
+
+                            <span><</span>hgroup ><br>
+                            <span><</span>h2 > <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;HTML examlpe page <br>
+                            <span><</span>/h2 > <br>
+                            <span><</span>p > <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; Posted by Mayborg. <br>
+                            <span><</span>/p > <br>
+                            <span><</span>p > <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; Additional info. <br>
+                            <span><</span>/p > <br>
+                            <span><</span>/hgroup >
+                            
+                            <br><br><span><</span>/header >
+                        </p>
+                        
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                            
+                            <h2> HTML examlpe page
+                            </h2>
+                            <p> Posted by Mayborg.
+                            <p> <p > Additional info.
+                            <p> 
+                            
+                        </div>
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>footer > ... <span><</span>/footer >
+                    </h3>
+                    <div>
+                        <p>
+                            Defines footer for the document. It typically contains :
+                            <ul style="font-size:0.85rem;">
+                                <li>Authorship info.</li>
+                                <li>Copyright Info.</li>
+                                <li>Contact info.</li>
+                                <li>SiteMap</li>
+                                <li>Back to Top Link</li>
+                                <li>Realted Documents</li>
+                            </ul> 
+                        </p>
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            <span><</span>footer > 
+                            <br> <br>
+                            <span><</span>p > <br> &nbsp;&nbsp;&nbsp;&nbsp;Author: Mayur Borgude. <br>
+                            <span><</span>/p > <br>
+                            <span><</span>p ><br>
+                            <span><</span>a href = mailto:mayurborgude @gmail.com > mayurborgude@gmail.com <br><span><</span>/a>
+                            <span><</span>/p >
+                            
+                            <br><br><span><</span>/footer >
+                        </p>
+                    
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                            
+                            <p > &nbsp;Author: Mayur Borgude.
+                            </p >
+                            <p >
+                            <a href = mailto:mayurborgude @gmail.com > mayurborgude@gmail.com
+                            </a> </p >
+                            
+                        </div>
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>main > ... <span><</span>/main >
+                    </h3>
+                    <div>
+                        <p>
+                            Specifies main content in a document, the content inside the "main" element should be unique to document . It should not contain any contain any repeated content aacross document such as SideBars, Navigation Links, Copyright Info, Site Logo, and Search Forms. 
+                            <p style="padding-left: 5px; background-color: #eba1cd;">
+                                <span style="font-weight: bold; font-size: 0.9rem;">Note:</span>
+                                There must only be one "main" element in a document. the "main" element must not be the decendent of: 
+                                <ul style=" background-color: #eba1cd; font-size: 0.90rem;">
+                                    <li><span><</span>article></li>
+                                    <li><span><</span>aside></li>
+                                    <li><span><</span>header></li>
+                                    <li><span><</span>footer></li>
+                                    <li><span><</span>nav></li>
+                                    <li><span>etc.</li>
+                                </ul>
+                            </p>
+                        </p>
+                        
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>section > ... <span><</span>/section >
+                    </h3>
+                    <p>Defines a Section in a document. that can de navigated via links in the navbars.
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <div>
+                        <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>search > ... <span><</span>/search>
+                        </h3>
+                        <p>Defines a search section Elements inside search can be form elements used to perform search.
+                        </p>
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            <span><</span>search > 
+                            <br><br>
+                            <span><</span>form > <br>
+                            &nbsp;&nbsp;<span><</span>input name="fsrch" <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="fsrch" <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeholder="Search <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google">
+                            <br>
+                            <span><</span>/form> <br>
+                            
+                            <br><span><</span>/search >
+                        </p>
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                            
+                            <search >
+
+                                <form >
+                                  <input name="fsrch"
+                                    id="fsrch"
+                                    placeholder="Search Google">
+                                </form>
+                                <br>
+                            </search >
+                            
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <div>
+                        <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>article > ... <span><</span>/article>
+                        </h3>
+                        <p>Defines a search section Elements inside search can be form elements used to perform search.
+                        </p>
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            <span><</span>article > 
+                            <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>h3 > Tokyo -Japan <span><</span>/h3 ><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>p > <br>Tokyo , officially the Tokyo Metropolis (東京都, Tōkyō-to), is the capital of Japan and one of the most populous cities in the world, with a population of over 14 million residents as of 2023 and the second-most-populated capital in the world. <br>&nbsp;&nbsp;&nbsp;&nbsp;<span><</span>/p> 
+                            <br><br><span><</span>/article >
+                        </p>
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                            
+                            <article >
+
+                                <h3> Tokyo -Japan </h2>
+                                <p> Tokyo , officially the Tokyo Metropolis (東京都, Tōkyō-to), is the capital of Japan and one of the most populous cities in the world, with a population of over 14 million residents as of 2023 and the second-most-populated capital in the world.
+                                </p>
+                            
+                            </article > 
+                            
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <div>
+                        <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>aside > ... <span><</span>/aside>
+                        </h3>
+                        <p>tag defines some content aside from the content it is placed in. <br>
+                            The aside content should be indirectly related to the surrounding content. <br>
+                            
+                            <span style="font-weight: bold;">Tip :</span> The "aside" content is often placed as a sidebar in a document.
+                            
+                            <p style="padding-left: 5px; background-color: #eba1cd;">
+                                <span style="font-weight: bold; font-size: 0.9rem;">Note:</span>
+                                The "aside" element does not render as anything special in a browser. However, you can use CSS to style the "aside" element (see example below).
+                            </p>
+                        </p>
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            
+                            <span><</span>aside > 
+                            <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>h3 > Osaka -Japan <span><</span>/h3 ><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>p > <br>Osaka is a designated city in the Kansai region of Honshu in Japan, and one of the three major cities of Japan (Tokyo-Osaka-Nagoya). It is the capital of and most populous city in Osaka Prefecture, and the third-most populous city in Japan, following the special wards of Tokyo and Yokohama. <br>&nbsp;&nbsp;&nbsp;&nbsp;<span><</span>/p> 
+                            <br><br><span><</span>/aside >
+                        </p>
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                            
+                            <aside >
+
+                                <h3 > Osaka -Japan </h3 >
+                                <p >
+                                    Osaka is a designated city in the Kansai region of Honshu in Japan, and one of the three major cities of Japan (Tokyo-Osaka-Nagoya). It is the capital of and most populous city in Osaka Prefecture, and the third-most populous city in Japan, following the special wards of Tokyo and Yokohama.
+                                </p>
+                            
+                            </aside > 
+                            
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <div>
+                        <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>details > <br><span><</span>summary > ... <span><</span>/summary> <br> <span><</span>/details>
+                        <br>
+                        
+                        </h3>
+                        <p>
+                            The "details" tag specifies additional details that the user can open and close on demand. <br>
+                            The "details" tag is often used to create an interactive widget that the user can open and close. By default, the widget is closed. When open, it expands, and displays the content within.
+                            <br>
+                            The "summary" tag is used in conjunction with "details" to specify a visible heading for the details.
+                        </p>
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            
+                            <span><</span>details > 
+                            <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>summary > Nashik -India <br>&nbsp;&nbsp;&nbsp;&nbsp;<span><</span>/summary ><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>p > <br>Nashik , Marathi: [naːʃik], formerly Nasik is a city in the northern region of the Indian state of Maharashtra. Situated on the banks of the river Godavari. The population of Nashik city is around 2.2 million and is emerging as one of the fastest-growing cities in India. <br>&nbsp;&nbsp;&nbsp;&nbsp;<span><</span>/p> 
+                            <br><br><span><</span>/details >
+                        </p>
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                            
+                            <details >
+
+                                <summary > Nashik -India
+                                </summary >
+                                <p >
+                            Nashik , Marathi: [naːʃik], formerly Nasik is a city in the northern region of the Indian state of Maharashtra. Situated on the banks of the river Godavari. The population of Nashik city is around 2.2 million and is emerging as one of the fastest-growing cities in India.
+                                </p>
+                            
+                            </details > 
+                            
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <div>
+                        <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>dialog > ...<span><</span>/dialog>
+                        <br>
+                        
+                        </h3>
+                        <p>
+                            The "dialog" tag defines a dialog box or subwindow.
+                            The "dialog" element makes it easy to create popup dialogs and modals on a web page.
+                        </p>
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            
+                            <span><</span>dialog open > 
+                            <br>
+                                Hello, Buddy!
+                            <br><span><</span>/dialog >
+                        </p>
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                            
+                            <dialog open >
+                                Hello, Buddy!
+                            </dialog >  
+                            
+                        </div>
+
+                    </div>
+                </li>
+
+            </ol>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+        <div id="Link_Tags" style="padding: 0; margin: 0;">
+            <h3>Link Tags -</h3>
+            <ol style="margin-left: -20px;margin-top: 10px;">
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>a href="..."> ...<span><</span>/a ></h3>
+                    <p>
+                        The <span><</span>a > tag defines a hyperlink, which is used to link from one page to another.
+
+                            The most important attribute of the <span><</span>a > element is the href attribute, which indicates the link's destination.
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+
+                        <span><</span>a href="https://github.com/<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mayborg121" > <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; Visit My Github <br><span><</span>/a >
+                        
+                    </p>
+
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+
+                        <a href="https://github.com/Mayborg121" > 😎Visit My Github </a >
+                        <br>
+                        <br>
+                    </div>
+                    
+
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>link href="..."> ...<span><</span>/a ></h3>
+                    <p>
+                        The <span><</span>link> tag defines the relationship between the current document and an external resource.
+
+                        The <span><</span>link> tag is most often used to link to external style sheets or to add a favicon to your website.
+
+                        The <span><</span>link> element is an empty element, it contains attributes only.
+
+
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+
+                        <span><</span>link rel="stylesheet" href="styles.css">
+                        
+                    </p>
+
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+
+                        <link rel="stylesheet" href="styles.css">
+
+                        <br>
+                        <br>
+                    </div>
+                    
+
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>nav > ...<span><</span>/nav ></h3>
+                    <p>
+                        The <span><</span>nav > tag defines a set of navigation links.
+
+                        Notice that NOT all links of a document should be inside a<span><</span>nav > element. The <span><</span>nav > element is intended only for major blocks of navigation links.
+                            
+                        Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+
+                        <span><</span>h4>The Navigation links <span><</span>/h4 > <br>
+
+                        <span><</span>nav > <br>
+                        <span><</span>a href="https://github.com/<br>&nbsp;&nbsp;&nbsp;&nbsp;Mayborg121">Github <span><</span>/a > | <br>
+                        <span><</span>a href="https://www.linkedin.com<br>&nbsp;&nbsp;&nbsp;&nbsp;/in/mayb0rg <span><</span>/a > | <br>
+                        <span><</span>a href="https://www.hackerrank.com/<br>&nbsp;&nbsp;&nbsp;&nbsp;Mayborg">Github <span><</span>/a > | <br>
+                        <span><</span>a href="https://in.pinterest.com/<br>&nbsp;&nbsp;&nbsp;&nbsp;Mayb0rg">Github <span><</span>/a > | <br>
+                        <span><</span>/nav >
+                        <br>
+                        
+                    </p>
+
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+
+                        <h4>The Navigation links</h4>
+
+                        <nav>
+                        <a href="https://github.com/Mayborg121">Github</a> |
+                        <a href="https://www.linkedin.com/in/mayb0rg">LinkedIn</a> |
+                        <a href="https://www.hackerrank.com/Mayborg">HackerRank</a> |
+                        <a href="https://in.pinterest.com/Mayb0rg/">Pinterest</a>
+                        </nav>
+
+                        <br>
+                    </div>
+                    
+
+                </li>
+
+            </ol>
+        </div>
+        <br>
+
+        <div id="ImageTags" style="padding: 0; margin: 0;">
+            <h3>Image Tags -</h3>
+            <ol style="margin-left: -20px;margin-top: 10px;">
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>img src="..."></h3>
+                    <div>
+                        <p>
+                            The "img" tag is used to embed an image in an HTML page.
+                        </p>
+                        <p>
+                            Images are not technically inserted into a web page; images are linked to web pages. The "img" tag creates a holding space for the referenced image.
+
+                            
+                            Note: 
+
+                            Tip: 
+                        </p>
+                        <p>
+                            The "img" tag has two required attributes:
+
+                            src - Specifies the path to the image
+                            alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed
+                        </p>
+                        <p style="padding-left: 5px; background-color: #eba1cd;">
+                            <span style="font-weight: bold; font-size: 0.9rem;">Note:</span>
+                            Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads.<br><span style="font-weight: bold; font-size: 0.9rem;">Tip:</span> To link image to another document, simply nest the<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>img ></span> tag inside an<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>a ></span>tag.
+                        </p>
+                        
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                    
+                            <span><</span>img src="img/aesthetics.jpg" <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt="Cartoon picture of a boy and <br>&nbsp;&nbsp;&nbsp;&nbsp; his dog." <br>&nbsp;&nbsp;&nbsp;&nbsp; width="420" height="325">
+                            
+                        </p>
+
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                            <img src="img/aesthetics.jpg"alt="Cartoon picture of a boy and his dog." width="320" height="225"> 
+                            
+                            <br>
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>map name="..">...<span><</span>/map ></h3>
+                    <div>
+                        <p>
+                            The "map" tag is used to define an image map. An image map is an image with clickable areas.
+                        </p>
+                        
+                        <p style="padding-left: 5px; background-color: #eba1cd;">
+                            <span style="font-weight: bold; font-size: 0.9rem;">Note:</span>
+                            The required name attribute of the "map" element is associated with the <span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>img ></span> 's usemap attribute and creates a relationship between the image and the map.
+                                
+                                The <span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>map ></span>  element contains a number of <span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>area ></span>  elements, that defines the clickable areas in the image map.
+                        </p>
+                        
+                        <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>area shape="..." <br>&nbsp;&nbsp;&nbsp;&nbsp; coords="..." href="..."></h3>
+
+                        <p>
+                            The "area" tag defines an area inside an image map (an image map is an image with clickable areas)."area" elements are always nested inside a "map" tag.
+                        </p>
+
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                    
+                            <span><</span>h4> <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Click on the objects in image : <br><span><</span>/h4><br><br>
+
+                            <span><</span>img src="\img\scene.jpg" <br> &nbsp;&nbsp;&nbsp;&nbsp;alt="LighthouseScene" <br>&nbsp;&nbsp;&nbsp;&nbsp;usemap="#scenemap" <br>&nbsp;&nbsp;&nbsp;&nbsp;width="280" height="255"> <br><br>
+                            
+                            <span><</span>map name="scenemap"> <br>
+                              <span><</span>area shape="rect" <br>&nbsp;&nbsp;&nbsp;&nbsp;coords="175,29,243,159" <br>&nbsp;&nbsp;&nbsp;&nbsp;alt="lighthouse" <br>&nbsp;&nbsp;&nbsp;&nbsp;href="https://en.wikipedia.org/<br>&nbsp;&nbsp;&nbsp;&nbsp;wiki/Lighthouse" > <br>
+                              <span><</span>area shape="rect" 
+                              <br>&nbsp;&nbsp;&nbsp;&nbsp;coords="0,165,134,254" 
+                              <br>&nbsp;&nbsp;&nbsp;&nbsp;alt="River" <br>&nbsp;&nbsp;&nbsp;&nbsp;href="https://en.wikipedia.org/ <br>&nbsp;&nbsp;&nbsp;&nbsp;wiki/River"><br>
+                              <span><</span>a rea shape="rect" 
+                              <br>&nbsp;&nbsp;&nbsp;&nbsp;coords="0,0,150,95" 
+                              <br>&nbsp;&nbsp;&nbsp;&nbsp;alt="Clouds" <br>&nbsp;&nbsp;&nbsp;&nbsp;href="https://en.wikipedia.org/
+                              <br>&nbsp;&nbsp;&nbsp;&nbsp;wiki/Cloud"> 
+                            <br>
+                            <span><</span>/map>
+                            
+                        </p>
+
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                            <h4>Click on the objects in image :</h4>
+
+                            <img src="\img\scene.jpg" alt="Workplace" usemap="#workmap" width="280" height="255">
+                            
+                            <map name="workmap">
+                              <area shape="rect" coords="175,29,243,159" alt="lighthouse" href="https://en.wikipedia.org/wiki/Lighthouse" >
+                              <area shape="rect" coords="0,165,134,254" alt="River" href="https://en.wikipedia.org/wiki/River">
+                              <area shape="rect" coords="0,0,150,95" alt="Clouds" href="https://en.wikipedia.org/wiki/Cloud">
+                              <area shape="rect" coords="140,178,278,253" alt="Cliffs" href="https://en.wikipedia.org/wiki/Cliffs">
+                            </map>
+                             
+                            
+                            <br>
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>canvas >...<span><</span>/canvas ></h3>
+                    <div>
+                        <p>
+                            The "canvas" tag is used to draw graphics, on the fly, via scripting (usually JavaScript).
+                            The "canvas" tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics.
+                        </p>
+                        
+                        <p style="padding-left: 5px; background-color: #eba1cd;">
+                            <span style="font-weight: bold; font-size: 0.9rem;">Note:</span>
+                            you must use a script to actually draw the graphics.
+                        </p>
+
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            <span><</span>h3 > HTML5 Canvas : <span><</span>/h3> <br><br>
+                            <span><</span>canvas id="myCanvas" <br>&nbsp;&nbsp;&nbsp;&nbsp;width="250" height="150" <br>&nbsp;&nbsp;&nbsp;&nbsp;style="border:1px solid grey" > <br> <br><span><</span>/canvas>
+                            
+                        </p>
+
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                            <h3 > HTML5 Canvas : </h3>
+
+                            <canvas id="myCanvas"width="250" height="150" style="border:1px solid grey" >
+
+                            </canvas>
+                             
+                            
+                            <br>
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>figure > ...<span><</span>/figure ></h3>
+                    <div>
+                        <p>
+                            The "figure" tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+                            While the content of the "figure" element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+                        </p>
+                        
+                        <h4 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>figcaption > ...<span><</span>/figcaption ></h4>
+
+                        <p>
+                            The "figcaption" tag defines a caption for a "figure" element.
+                            The "figcaption" element can be placed as the first or last child of the "figure" element.
+                        </p>
+
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+
+                            <span><</span>h3 > Figure 1075 <span><</span>/h3> <br> <br>
+
+                            <span><</span>figure > <br>
+                                <span><</span>img src="\img\figure.jpg" <br>&nbsp;&nbsp;&nbsp;&nbsp;alt="Trulli" 
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;width="280" height="205" > 
+                                <br>
+                                <span><</span>figcaption > 
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;Fig.1 - Young Lady, Engg.Graphics.
+                                <br>
+                                <span><</span>/figcaption > <br>
+                            <span><</span>/figure >
+                            
+                        </p>
+
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                            <h3 > Figure 1075 </h3>
+
+                            <figure>
+                                <a href="https://1.bp.blogspot.com/-wTVfufUU0lM/YEOn9N3kt5I/AAAAAAAA01Q/s_b-TXiG5tsuCPqTowYF_GaSKPIi9xiugCLcBGAsYHQ/s2048/2D%2BCAD%2BEXERCISES%2B%2528WWW.STUDYCADCAM.COM%2529%2B1075.png"><img src="\img\figure.jpg" alt="Trulli" width="300" height="215"></a>
+                                
+                                <figcaption>Fig.1 - Young Lady, Engg.Graphics.</figcaption>
+                            </figure>
+                             
+                            
+                            <br>
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>picture > ...<span><</span>/picture ></h3>
+                    <div>
+                        <p>
+                            The "picture" tag gives web developers more flexibility in specifying image resources.
+                            The most common use of the "picture" element will be for art direction in responsive designs. Instead of having one image that is scaled up or down based on the viewport width, multiple images can be designed to more nicely fill the browser viewport.
+                            <br>
+                            The browser will look for the first<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>source ></span> element where the media query matches the current viewport width, and then it will display the proper image (specified in the srcset attribute). The<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>img ></span> element is required as the last child of the<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>picture ></span>element, as a fallback option if none of the source tags matches.
+                        </p>
+                        
+                        <h4 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>source &nbsp;media=".." srcset=".." ></h4>
+
+                        <p>
+                            The <span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>source ></span> tag is used to specify multiple media resources for media elements, such as<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>video></span>,<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>audio ></span>, and <picture>.
+                            The <span><</span>source > tag allows you to specify alternative video/audio/image files which the browser may choose from, based on browser support or viewport width. The browser will choose the first <span><</span >source> it supports.
+                        </p>
+
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+
+                            <span><</span>p> <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                            Resize the browser window to load <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;different images. <br><span><</span>/p> <br> <br>
+
+                            <span><</span>picture> <br>
+                                
+                                <span><</span>source media="(min-width:650px)" <br>&nbsp;&nbsp;&nbsp;&nbsp;srcset="img_pink_flowers.jpg">
+                            
+                                <span><</span>source media="(min-width:650px)" <br>&nbsp;&nbsp;&nbsp;&nbsp;srcset="img_pink_flowers.jpg">
+                                <br>
+                                <span><</span>img src="img_orange_flowers.jpg" <br>&nbsp;&nbsp;&nbsp;&nbsp; alt="Flowers" style="width:auto;">
+                            
+                            <br><span><</span>/picture>
+                            
+                        </p>
+
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                            <p>Resize the browser window to load different images.</p>
+
+                            <picture>
+                                <source media="(min-width:696px)" srcset="\img\pic600.jpg">
+                                <source media="(min-width:496px)" srcset="\img\pic400.jpg">
+                                <source media="(min-width:200px)" srcset="\img\pic230.jpg">
+                                <img src="\img\pic600.jpg" alt="Flowers" style="width:auto;">
+                            </picture>
+                             
+                            
+                            <br>
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>svg > ...<span><</span>/svg ></h3>
+                    <div>
+                        <p>
+                            The <span><</span>svg > tag defines a container for SVG graphics. SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+                        </p>
+                        
+
+                        <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+
+                            <span><</span>p> Creating tree using SVG :<span><</span>/p> <br> <br>
+
+                            <span><</span>svg width="200" height="300" <br>&nbsp;&nbsp;&nbsp;&nbsp;viewBox="-120 -50 200 200"> <br> <br>
+                                <span><</span>polygon points="0,0 80, <br>&nbsp;&nbsp;&nbsp;&nbsp;120 -80,120" fill="#234236" />
+                                <span><</span>polygon points="0,-40 60,
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;60 -60,60" fill="#0C5C4C" />
+                                <span><</span>polygon points="0,-80 40,
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;0 -40,0" fill="#38755B" /> <br>
+                                <span><</span>rect x="-20" y="120" width="40" 
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;height="30" fill="#42060D"/> <br> <br>
+                            <span><</span>/svg >
+                            
+                        </p>
+
+                        <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                            <p>Creating tree using SVG :</p>
+
+                            <svg width="200" height="300" viewBox="-120 -50 200 200">
+                                <polygon points="0,0 80,120 -80,120" fill="#234236" />
+                                <polygon points="0,-40 60,60 -60,60" fill="#0C5C4C" />
+                                <polygon points="0,-80 40,0 -40,0" fill="#38755B" />
+                                <rect x="-20" y="120" width="40" height="30" fill="#42060D"/>
+                            </svg>
+                             
+                            <br>
+                        </div>
+
+                    </div>
+                </li>
+
+            </ol>
+        </div>
+        <br>
+        <div id="Audio/VideoTags" style="padding: 0; margin: 0;">
+            <h3>Audio/Video Tags -</h3>
+            <ol style="margin-left: -20px;margin-top: 10px;">
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>audio controls >...<span><</span>/audio ></h3>
+                    
+                    <p>
+                        The <span><</span>audio > tag is used to embed sound content in a document, such as music or other audio streams.
+
+                        The <span><</span>audio > tag contains one or more <span><</span>source > tags with different audio sources. The browser will choose the first source it supports.
+                            
+                        The text between the <span><</span>audio > and <span><</span>/audio > tags will only be displayed in browsers that do not support the <span><</span>audio > element.
+                
+                        <p>
+                            There are three supported audio formats in HTML: MP3, WAV, and OGG.
+                        </p>
+
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+
+                        <span><</span>audio controls >
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>source src="\img\roja.mp3"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="audio/mpeg"> <br>
+                        <span><</span>/audio >
+                        <br><br>
+                        
+                    </p>
+
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+
+                        <audio controls>
+                            <source src="\img\roja.mp3" type="audio/mpeg">
+                        </audio>
+                         
+                        
+                        <br>
+                    </div>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>video controls >...<span><</span>/video ></h3>
+                    
+                    <p>
+                        The <span><</span>audio > tag is used to embed sound content in a document, such as music or other audio streams.
+
+                        The <span><</span>audio > tag contains one or more <span><</span>source > tags with different audio sources. The browser will choose the first source it supports.
+                            
+                        The text between the <span><</span>audio > and <span><</span>/audio > tags will only be displayed in browsers that do not support the <span><</span>audio > element.
+                
+                        <p>
+                            There are three supported audio formats in HTML: MP3, WAV, and OGG.
+                        </p>
+
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+
+                        <span><</span>video width="270" height="320" <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;controls >
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>source src="\img\3d.mp3"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="video/mp4"> <br>
+                        <span><</span>/video >
+                        
+                    </p>
+
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+
+                        <video width="300" height="360" autoplay loop controls>
+                            <source src="\img\3d.mp4" type="video/mp4">
+                        </video>
+                         
+                        
+                        <br>
+                    </div>
+                </li>
+
+            </ol>
+        </div>
+        <br>
+
+        <br>
+
+
+        <div id="FormattingTags" style="padding: 0; margin: 0;">
+            <h3>Formatting Tags -</h3>
+            <ol style="margin-left: -20px; margin-top: 10px;">
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>abbr title="."> ...<span><</span>/abbr >
+                    </h3>
+                    <p>Defines an abbrevation or an Acronym for a phrase. here only abbrevation is displayed and the abbrivated text is displayed when hovered over(similiar to tooltips).</p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            
+                        <span><</span>abbr title = "Mayur Borgude" > 
+                        <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;MayBorg
+                        <br><span><</span>/abbr >
+                    </p>
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                        
+                        <abbr title = "Mayur Borgude" >
+                            MayBorg
+                        </abbr >  
+                        
+                    </div>
+
+                </li>
+                <br>
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                        <span><</span>address > ...<span><</span>/address >
+                    </h3>
+                    <p>
+                        The "address" tag in HTML indicates the contact information of a person or an organization. The contact information can be an email address, URL, physical address, mobile number, social media, etc. 
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                            
+                        <span><</span>address > 
+                        <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Written By : <span><</span>a href="mailto: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;mayurborgude@gmail.com"> <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Mayur Borgude<span><</span>/a> <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Visit Us At : <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Github.com/Mayborg121 <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;P/O - 422003 , HAL Airbase <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Nashik,Ind. <br>
+
+                        <br><span><</span>/address >
+                    </p>
+
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                        
+                        <address >
+                            Written By : <a href="mailto:
+                            mayurborgude@gmail.com">
+                            Mayur Borgude</a> <br>
+                            Visit Us At : <br>
+                            Github.com/Mayborg121 <br>
+                            P/O - 422003 , HAL Airbase <br>
+                            Nashik,Ind. <br>
+                        </address >   
+                    </div>
+
+                </li>
+                <br>
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>b > ...<span><</span>/b >
+                </h3>
+                <p>
+                    The "b" (Bold) tag in HTML is for making text bold without adding extra importance. Text within "b" displays in a bold style. 
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>b > 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; This Text Will Be Bold.
+
+                    <br><span><</span>/b >
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <b>
+                        This Text Will Be Bold.
+                    </b>   
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>i > ...<span><</span>/i >
+                </h3>
+                <p>
+                    The "i" (italic) tag in HTML is used to display the content in italic style. This tag is generally used to display the technical term, phrase, the important word in a different language. 
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>i > 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; This Text Will Be Bold.
+
+                    <br><span><</span>/i >
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <i>
+                        This Text Will Be Italic.
+                    </i>   
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>blockquote > ...<span><</span>/blockquote >
+                </h3>
+                <p>
+                    The "blockquote" tag specifies a section that is quoted from another source. 
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>blockquote cite="https:// 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;www.vincentvangogh.org/ <br>&nbsp;&nbsp;&nbsp;&nbsp;quotes.jsp" > 
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; " Only when I fall do I get up <br>&nbsp;&nbsp;&nbsp;&nbsp; again. " - Vincent Van Gogh
+                    <br>
+                    <br><span><</span>/blockquote >
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <blockquote cite="https://www.vincentvangogh.org/quotes.jsp" >" Only when I fall do I get up again. " - Vincent Van Gogh
+                    </blockquote >
+                    <br>
+                    
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>cite > ...<span><</span>/cite >
+                </h3>
+                <p>
+                    The "cite" tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+
+
+                    <p style="padding-left: 5px; background-color: #eba1cd;">
+                        <span style="font-weight: bold; font-size: 0.9rem;">Note:</span>
+                        The text in the <span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>cite ></span> element usually renders in italic.
+                    </p>
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>h3 >Citing Van Gogh's Art<span><</span>/h3 > 
+                    <br>
+                    <span><</span>img src="/img/ <br>&nbsp;&nbsp;&nbsp;&nbsp;Sunflowers_vangogh.jpg" <br>&nbsp;&nbsp;&nbsp;&nbsp;width="200" height="200" <br> &nbsp;&nbsp;&nbsp;&nbsp;alt="The Sunflowers"> <br>
+                    <span><</span>p > 
+                    <br>
+                    <span><</span>cite>The Sunflowers<span><</span>/cite > <br> &nbsp;&nbsp;&nbsp;&nbsp;by Vincent Van <br>&nbsp;&nbsp;&nbsp;&nbsp;Gogh. <br>
+                    <span><</span>/p>
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <h3>Citing Van Gogh's Art</h3>
+
+                    <img src="/img/Sunflowers_vangogh.jpg" width="200" height="200" alt="The Sunflowers">
+                    <p>
+                        <cite>The Sunflowers</cite> by Vincent Van Gogh,1888.
+                    </p>
+                    
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>code > ...<span><</span>/code >
+                </h3>
+                <p>
+                    The "code" tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>code > This is code <span><</span>/code >
+                    <br>
+                    <br>
+
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <code style="font-family: 'Courier New', Courier, monospace;">This is code</code>
+                    <br>
+                    <br>
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>del > ...<span><</span>/del > <br>
+                    <span><</span>ins > ...<span><</span>/ins >
+                </h3>
+                <p>
+                    The "del" tag defines text that has been deleted from a document. Browsers will usually strike a line through deleted text. "ins" is used to unsert the new text its usually used after "del" tag.
+                </p>
+
+                <div style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>p > <br>&nbsp;&nbsp;&nbsp;&nbsp;I love <span><</span>del >  Cats <span><</span>/del> <br>&nbsp;
+                    <span><</span>ins > Dogs<span><</span>/ins > ! <br>
+                    <span><</span>/p >
+
+                </div>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <p>I love <del> Cats </del> <ins>Dogs</ins>!
+                    </p> 
+                    <br>
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>dfn > ...<span><</span>/dfn >
+                </h3>
+                <p>
+                    The "dfn" tag stands for the "definition element", and it specifies a term that is going to be defined within the content. It is shown as tooltip.The nearest parent of the "dfn" tag must also contain the definition/explanation for the term.
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>p > <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span><</span>dfn title="HyperText Markup 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Language">HTML 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span><</span>/dfn> 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;is the standard markup language <br>&nbsp;&nbsp;&nbsp;&nbsp;for creating web pages.
+                    <br><span><</span>/p>
+                    <br>
+                    <br>
+
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <p >
+                        <dfn title="HyperText Markup Language">HTML
+                       </dfn>
+                       is the standard markup language
+                       for creating web pages.
+                   </p> 
+                    <br>
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>mark > ...<span><</span>/mark >
+                </h3>
+                <p>
+                    The "mark" tag is used to highlight or mark the text.
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>p > <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span><</span>mark > 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span><</span>/mark > 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;is the standard markup language <br>&nbsp;&nbsp;&nbsp;&nbsp;for creating web pages.
+                    <br><span><</span>/p>
+                    <br>
+                    <br>
+
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <p>
+                        <mark>
+                            HTML
+                        </mark>
+                       is the standard markup language
+                       for creating web pages.
+                   </p>  
+                    <br>
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>meter > ...<span><</span>/meter >
+                </h3>
+                <p>
+                    The "meter" tag defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge.
+                    <p>Examples: Disk usage, the relevance of a query result, etc.</p>
+                        
+                        <p style="padding-left: 5px; background-color: #eba1cd;">
+                            <span style="font-weight: bold; font-size: 0.9rem;">Note:</span>
+                            The "meter" tag should not be used to indicate progress (as in a progress bar). For progress bars, use the <span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>progress ></span> tag.
+                        </p>
+
+                        
+                        <p>Tip: Always add the "label" tag for best accessibility practices!</p>
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>label for="disk_c"> <br> &nbsp;&nbsp;&nbsp;&nbsp;Disk usage C: <br>
+                    <span><</span>/label ><br>
+                    <span><</span>meter id="disk_c" value="6"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;min="0" max="10"><br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;6 out of 10 <br>
+                    <span><</span>/meter >
+                    <br>
+                    <br>
+
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <label for="disk_c">Disk usage C:</label>
+                    <meter id="disk_c" value="6" min="0" max="10">2 out of 10</meter>
+                    <br>
+
+                    <br>
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>progress > ...<span><</span>/progress >
+                </h3>
+                <p>
+                    The "progress" tag represents the completion progress of a task.
+
+                        Tip: 
+                    <p>Examples: Disk usage, the relevance of a query result, etc.</p>
+                        
+                        <p style="padding-left: 5px; background-color: #eba1cd;">
+                            <span style="font-weight: bold; font-size: 0.9rem;">Note:</span>
+                            Always add the<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>label ></span> tag for best accessibility practices ! <br><span style="font-weight: bold; font-size: 0.9rem;">Tip:</span> Use the<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>progress ></span>tag in conjunction with JavaScript to display the progress of a task.
+                        </p>
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>label for="file"> <br> &nbsp;&nbsp;&nbsp;&nbsp;Download Progress : <br>
+                    <span><</span>/label ><br>
+                    <span><</span>progress id="file" value="73"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;min="0" max="100"><br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;73% out of 100% <br>
+                    <span><</span>/progress >
+                    <br>
+                    <br>
+
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <label for="file">
+                        Download Progress :
+                    </label>
+                    <progress id="file" value="73"
+                        min="0" max="100">
+                        73% out of 100%
+                    </progress> 
+
+                    <br>
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>s > ...<span><</span>/s >
+                </h3>
+                <p>
+                    The "s"(strike-through) tag specifies text that is no longer correct, accurate or relevant. The text will be displayed with a line through it.
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>s > 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;this text is Striked-through.
+                    <br><span><</span>/s >
+                    <br>
+
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <s>
+                        this text is Striked-through.
+                    </s> 
+
+                    <br>
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>sub > ...<span><</span>/sub >
+                </h3>
+                <p>
+                    The "sub" (subscript) tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O.
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>p > 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Water - H<span><</span>sub >
+                    2<span><</span>/sub > O
+                    <br>
+                    <span><</span>/p >
+                    <br>
+                    <br>
+                    <span><</span>p > 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Glucose - C<span><</span>sub >
+                    6<span><</span>/sub >
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;H<span><</span>sub >
+                    12<span><</span>/sub > O
+                    <br> &nbsp;&nbsp;&nbsp;<span><</span>sub >
+                    6<span><</span>/sub >
+                    <br>
+                    <span><</span>/p >  
+
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <p>
+                        Water - H<sub style="margin: 0 -3px 0 1px;">2</sub> O
+                    </p>
+                    <p >
+                        Glucose - C<sub style="margin: 0 -3px 0 1px;">6</sub>
+                        H<sub style="margin: 0 1px 0 1px;">12</sub >O
+                        <sub style="margin-left:-3px;">6</sub>
+                    </p > 
+                    <br>
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>sup > ...<span><</span>/sup >
+                </h3>
+                <p>
+                    The "sup" (superscript) tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. its used in mathematical equations for exponentials .
+                </p>
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                        
+                    <span><</span>p > 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Two Squared = 2<span><</span>sup >
+                    2<span><</span>/sup > <br>&nbsp;&nbsp;&nbsp;&nbsp; = 4
+                    <br>
+                    <span><</span>/p > 
+
+                </p>
+                
+                <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <p >
+                        Two Squared = 2<sup style="margin-left: -2px;" > 2</sup >
+                         = 4
+                    </p > 
+                    <br>
+                </div>
+
+            </li>
+            <br>
+            <li>
+                <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;">
+                    <span><</span>template > ...<span><</span>/template >
+                </h3>
+                <p>
+                    The "template" tag is used as a container to hold some HTML content hidden from the user when the page loads.
+                        
+                </p>
+                <p>
+                    The content inside "template" can be rendered later with a JavaScript.
+                </p>
+                        
+                <p>
+                    You can use the "template" tag if you have some HTML code you want to use over and over again, but not until you ask for it. To do this without the "template" tag, you have to create the HTML code with JavaScript to prevent the browser from rendering the code.
+                </p>
+                        
+                
+
+                <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                    
+                    
+                    <span><</span>button onclick="showContent()"> 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Trigger Template<br><span><</span>/button> 
+                    <br>
+                    <br>
+
+                    <span><</span>template > 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>h3 > Mountains : Pixel Art <span><</span>/h3 > <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>img src="img/pixel_art.jpg" 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width="150" height="150" > <br>
+                    <span><</span>/template >
+                    <br>
+                    <br>
+                      
+                      <span><</span>script > <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;function showContent() {
+                        let temp = 
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementsByTagName 
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;("template")[0]; 
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        let clon = 
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp.content.cloneNode(true); 
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        document.body.appendChild(clon);} <br>
+                      <span><</span>/script >
+                </p>
+                
+                <div id="temp" style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                    
+                    <button onclick="showContent()">Trigger Template</button>
+
+                    <template>
+                    <div style="background-color: #eff3b7; margin: 0 20px 0 35px;">
+                      <h3>Mountains : Pixel Art</h3>
+                      <img src="img/pixel_art.jpg" width="150" height="150">
+                    </div>
+                    </template>
+
+                    <script>
+                    function showContent() {
+                      let temp = document.getElementsByTagName("template")[0];
+                      let clon = temp.content.cloneNode(true);
+                      document.getElementById("temp").appendChild(clon);
+                    }
+                    </script> 
+                    <br>
+                    <br>
+
+                </div>
+
+            </li>
+
+            </ol>
+        </div>
+        <br>
+
+
+        <div id="ListTags" style="padding: 0; margin: 0;">
+            <h3>List Tags -</h3>
+            <ol style="margin-left: -20px;margin-top: 10px;">
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>menu> ...<span><</span>/menu ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>li > ...<span><</span>/li ></h3>
+
+                    <p>
+                        The<span><</span>menu > tag defines an unordered list of content.
+
+                        Use the<span><</span>menu > tag together with the <span><</span>li > tag to create menu items.
+                            
+                        Note:<span><</span>menu > tag is an alternative to the<span><</span>ul > tag and browsers will treat these two lists equally.
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                    
+                        <span><</span>menu > <br>
+                            <span><</span>li >Coffee<span><</span>/li ><br>
+                            <span><</span>li >Milk<span><</span>/li ><br>
+                            <span><</span>li >Juice<span><</span>/li ><br>
+                        <span><</span>/menu >
+                        
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                        
+                        <menu>
+                            <li>Coffee</li>
+                            <li>Milk</li>
+                            <li>Juice</li>
+                        </menu>
+                      
+                        <br>
+                    </div>
+
+
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>dl> ...<span><</span>/dl ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>dt > ...<span><</span>/dt ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>dd > ...<span><</span>/dd ></h3>
+
+                    <p>
+                        The<span><</span>dl > tag defines a description list.
+
+                        The<span><</span>dl > tag is used in conjunction with<span><</span>dt > (defines terms/names) and<span><</span>dd > (describes each term/name).
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                    
+                        <span><</span>dl > <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>dt > Coffee <span><</span>/dt ><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span><</span>dd >Black hot drink<span><</span>/dd><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span><</span>dt > Milk <span><</span>/dt ><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span><</span>dd >White cold drink<span><</span>/dd>
+                            <br>
+                        <span><</span>/dl >
+                        
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                        
+                        <dl>
+                            <dt>Coffee</dt>
+                            <dd>Black hot drink</dd>
+                            <dt>Milk</dt>
+                            <dd>White cold drink</dd>
+                          </dl>
+                      
+                        <br>
+                    </div>
+
+
+                </li>
+
+            </ol>
+        </div>
+        <br>
+
+        <div id="TableTags" style="padding: 0; margin: 0;">
+            <h3>Table Tags -</h3>
+            <ol style="margin-left: -20px;margin-top: 10px;">
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>table > ... <span><</span>/table ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>th > ... <span><</span>/th ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>tr > ... <span><</span>/tr ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>td > ... <span><</span>/td ></h3>
+
+                    <p>
+                        The <span><</span>table > tag defines an HTML table.
+
+                            An HTML table consists of one<span><</span>table > element and one or more<span><</span>tr >,<span><</span>th >, and<span><</span>td > elements.
+                            
+                            The<span><</span>tr > element defines a table row, the<span><</span>th > element defines a table header, and the<span><</span>td > element defines a table cell.
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                    
+                        <span><</span>table >                               <br>
+                        <span><</span>tr>                                   <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>th>Month<span><</span>/th>            <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>th>Savings<span><</span>/th>          <br>
+                        <span><</span>/tr>                                  <br>
+                        <span><</span>tr>                                   <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td>January<span><</span>/td>          <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td>$100<span><</span>/td>             <br>
+                        <span><</span>/tr>                                  <br>
+                        <span><</span>tr>                                   <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td>February<span><</span>/td>         <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td>$80<span><</span>/td>              <br>
+                        <span><</span>/tr>                                  <br>
+                        <span><</span>/table>                               <br>
+                        
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                        
+                        <table >
+                            <tr>
+                              <th>Month</th>
+                              <th>Savings</th>
+                            </tr>
+                            <tr>
+                              <td>January</td>
+                              <td>$100</td>
+                            </tr>
+                            <tr>
+                              <td>February</td>
+                              <td>$80</td>
+                            </tr>
+                          </table>
+                      
+                        <br>
+                    </div>
+
+
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>thread > ... <span><</span>/thread ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>thead > ... <span><</span>/thead ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>tbody > ... <span><</span>/tbody ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>tfoot > ... <span><</span>/tfoot ></h3>
+
+                    <p>
+                        The<span><</span>thead > tag is used to group header content in an HTML table.
+
+                        The<span><</span>thead > element is used in conjunction with the<span><</span>tbody > and<span><</span>tfoot > elements to specify each part of a table (header, body, footer).
+                        
+                        <p>
+                            Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page.
+                        </p>
+                        
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                    
+                        <span><</span>table >   <br>
+                        <span><</span>thead >   <br>
+                        <span><</span>tr >  <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>th > Month<span><</span>/th > <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>th > Savings<span><</span>/th >   <br>
+                        <span><</span>/tr > <br>
+                        <span><</span>/thead >  <br>
+                        <span><</span>tbody >   <br>
+                        <span><</span>tr >  <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td > January<span><</span>/td >   <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td > $100<span><</span>/td >  <br>
+                        <span><</span>/tr > <br>
+                        <span><</span>tr >  <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td > February<span><</span>/td >  <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td > $80<span><</span>/td >   <br>
+                        <span><</span>/tr > <br>
+                        <span><</span>/tbody >  <br>
+                        <span><</span>tfoot >   <br>
+                        <span><</span>tr >  <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td > Sum<span><</span>/td >   <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td > $180<span><</span>/td >   <br>
+                        <span><</span>/tr > <br>
+                        <span><</span>/tfoot >  <br>
+                        <span><</span>/table >  <br>
+                        
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                        
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                              </tr>
+                              <tr>
+                                <td>February</td>
+                                <td>$80</td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <td>Sum</td>
+                                <td>$180</td>
+                              </tr>
+                            </tfoot>
+                          </table>
+                      
+                        <br>
+                    </div>
+
+
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>col > ... <span><</span>/col ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>colgroup > ... <span><</span>/colgroup ></h3>
+                    
+
+                    <p>
+                        The<span><</span>col > tag specifies column properties for each column within a<span><</span>colgroup > element.
+
+                        The<span><</span>col > tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :</b><br>
+                    
+                        <span><</span>table >           <br>
+                        <span><</span>colgroup >            <br>
+                        <span><</span>col span="2" style="background-color: <br>&nbsp;&nbsp;&nbsp;&nbsp;rgb(0, 167, 197)" >          <br>
+                        <span><</span>col style="background-color: <br>&nbsp;&nbsp;&nbsp;&nbsp;rgb(226, 188, 0)" >           <br>
+                        <span><</span>/colgroup >           <br>
+                        <span><</span>tr >          <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>th >ISBN<span><</span>/th >           <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>th >Title<span><</span>/th >          <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>th >Price<span><</span>/th >          <br>
+                        <span><</span>/tr >         <br>
+                        <span><</span>tr >          <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td >3476896<span><</span>/td >            <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td >The Picture of Dorian Gray<span><</span>/td >          <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td >$53<span><</span>/td >            <br>
+                        <span><</span>/tr >         <br>
+                        <span><</span>tr >          <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td >5869207<span><</span>/td >            <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td >Oldman and the Sea<span><</span>/td >           <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>td >$49<span><</span>/td >            <br>
+                        <span><</span>/tr >         <br>
+                        <span><</span>/table >          <br>
+                        
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :</b><br>
+                        
+                        <table>
+                            <colgroup>
+                              <col span="2" style="background-color:rgb(0, 167, 197)">
+                              <col style="background-color:rgb(226, 188, 0)">
+                            </colgroup>
+                            <tr>
+                              <th>ISBN</th>
+                              <th>Title</th>
+                              <th>Price</th>
+                            </tr>
+                            <tr>
+                              <td>3476896</td>
+                              <td>The Picture of Dorian Gray</td>
+                              <td>$53</td>
+                            </tr>
+                            <tr>
+                              <td>5869207</td>
+                              <td>Oldman and the Sea</td>
+                              <td>$49</td>
+                            </tr>
+                          </table>
+                      
+                        <br>
+                    </div>
+
+
+                </li>
+
+            </ol>
+        </div>
+        <br>
+
+
+
+
+
+
+
+
+        <div id="FormTags" style="padding: 0; margin: 0;">
+            <h3>Form Tags -</h3>
+            <ol style="margin-left: -20px;margin-top: 10px;">
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>form > ...<span><</span>/form ></h3>
+
+                    <p>
+                        The <span><</span>form > tag is used to create an HTML form for user input.
+
+                        The <span><</span>form > element can contain one or more of the following form elements:
+                            <br>
+                            <span><</span>input >       <br>
+                            <span><</span>textarea >        <br>
+                            <span><</span>button >      <br>
+                            <span><</span>select >      <br>
+                            <span><</span>option >      <br>
+                            <span><</span>optgroup >        <br>
+                            <span><</span>fieldset >        <br>
+                            <span><</span>label >       <br>
+                            <span><</span>output >      <br>
+                    </p>
+
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+                        
+                        <span><</span>form > <br>
+                        <span><</span>label for="fname"> <br>&nbsp;&nbsp;&nbsp;&nbsp; First name: 
+                        <span><</span>/label > <br>
+                        <span><</span>input type="text" id="fname" <br>&nbsp;&nbsp;&nbsp;&nbsp;name="fname"  placeholder="Mayur"> <br>
+                        <span><</span>label for="ln"> <br>&nbsp;&nbsp;&nbsp;&nbsp;Last name:      <span><</span>/label > <br>
+                        <span><</span>input type="text" id="ln" <br>&nbsp;&nbsp;&nbsp;&nbsp;name="ln"  placeholder="Borgude" ><br>
+                        <span><</span>input type="submit" value="Submit" > <br>
+                        <span><</span>/form >
+
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+
+                        <form >
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname" placeholder="Mayur"><br>
+                            <label for="ln">Last name:</label>
+                            <input type="text" id="ln" name="ln" placeholder="Borgude"><br><br>
+                            <input type="button" value="Submit">
+                        </form>
+
+                    <br>
+                    </div>
+
+                    
+
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>input type="..." ></h3>
+                    
+                    <p>
+                        The<span><</span>input > tag specifies an input field where the user can enter data.
+
+                        The<span><</span>input > element is the most important form element.
+
+                        The<span><</span>input > element can be displayed in several ways, depending on the type attribute.
+
+                        <p style="padding-left: 5px; background-color: #eba1cd;">
+                            <span style="font-weight: bold; font-size: 0.9rem;">Note:</span>
+                            Always add the<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>label ></span> tag for best accessibility practices ! <br><span style="font-weight: bold; font-size: 0.9rem;">Tip:</span>ALways use<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>label ></span>tag for text,checkbox,radio,file and password input types.
+                        </p>
+                        <br>
+
+                        <h5>The different input types are as follows:</h5>
+                        
+                    </p>
+
+
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>input type="button" ></h3>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+                    <span><</span>input type="button" value="Click Here" <br>&nbsp;&nbsp;&nbsp;&nbsp; onclick="alert('✨Heyy , Have a Good <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Day✨😊')">
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+                    <input type="button" value="Click Here" onclick="alert('✨Heyy , Have a Good Day✨😊')"> 
+                    <br>
+                    <br>
+                    </div>
+                    <br>
+
+
+
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>input type="checkbox" ></h3>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+                        <span><</span>label for="chkbx" > 
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Are you a Student ?<br><span><</span>/label > <br>
+                        <span><</span>input type="checkbox" id="chkbx" > <br>
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+                        <label for="chkbx">Are you a Student ?</label>
+                        <input type="checkbox" id="chkbx" >
+                    <br><br>
+                    </div>
+                    <br>
+
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>input type="color" ></h3>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+                        <span><</span>label for="clr" > 
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whats your Eye Color ?<br><span><</span>/label > <br>
+                        <span><</span>input type="color" id="clr" > <br>
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+                        <label for="clr" >Whats your Eye Color ?</label >
+                        <input type="color" id="clr" > 
+                    <br><br>
+                    </div>
+                    <br>
+
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>input type="xyz" ></h3>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+                        
+                    <span><</span>input type="date">Your Birth Date ?<br>
+                    <span><</span>input type="email" <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeholder="Enter Your Mail"><br> <br>
+                    <span><</span>label for="fyl"> Choose File<span><</span>/label>
+                    <span><</span>input type="file" id="fyl"><br><br>
+                    <span><</span>input type="image">Select Pic.<br><br>
+                    <span><</span>input type="month" <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeholder="Month"><br><br>
+                    <span><</span>input type="number"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeholder="Enter Your Age"><br><br>
+                    <span><</span>label for="pswd" >Enter Password<br><span><</span>/label >
+                    <br><span><</span>input type="password" id="pswd"> <br><br>
+                    <span><</span>label for="rdo">Check if your are <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Engineer<span><</span>/label> <br>
+                    <span><</span>input type="radio"> <br><br>
+                    <span><</span>label for="rng"> Brightness<span><</span>/label>
+                    <span><</span>input type="range" id="rng"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;min="0" max="100"> <br><br>
+                    <span><</span>label for="time">Enter Time<span><</span>/label>
+                    <span><</span>input type="time" <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="time" id="time"> <br> <br>
+                    <span><</span>input type="search"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; placeholder="Search">
+                    <br><span><</span>input type="submit" value="submit"> <br><br>
+                    <span><</span>input type="url"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeholder="Enter an URL">
+
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+                        
+                    <input type="date">Your Birth Date ?<br><br>
+                    <input type="email" placeholder="Enter Your Mail"><br><br>
+                    <label for="fyl"> Choose File</label>
+                    <input type="file" id="fyl"><br><br>
+                    <input type="image">Select Pic.<br><br>
+                    <input type="month" placeholder="Month"><br><br>
+                    <input type="number" placeholder="Enter Your Age"><br><br>
+                    <label for="pswd" >Enter Password</label >
+                    <input type="password" id="pswd"> <br><br>
+                    <label for="rdo">Check if your are Engineer</label>
+                    <input type="radio"> <br><br>
+                    <label for="rng"> Brightness</label>
+                    <input type="range" id="rng" min="0" max="100"> <br><br>
+                    <label for="time">Enter Time</label>
+                    <input type="time" name="time" id="time"> <br>
+                    <input type="url" placeholder="Enter an URL"> <br>
+                    <input type="search" placeholder="Search">
+                    <input type="submit" value="submit"> <br><br>
+                    
+
+                    <br><br>
+                    </div>
+                    <br>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>iframe > ...<span><</span>/iframe ></h3>
+
+                    <p>
+                        The<span><</span>iframe > tag specifies an inline frame.
+
+                            An inline frame is used to embed another document within the current HTML document.
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+                            <span><</span>iframe src="http://www.fluffbucket.co.uk/basicweb.htm" frameborder="0"></iframe>
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+                            <iframe src="http://www.fluffbucket.co.uk/basicweb.htm" frameborder="0" ></iframe>
+                    <br><br>
+                    </div>
+                    <br>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>select > ...<span><</span>/select ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>option value="" >...<span><</span>/option ></h3>
+
+                    <p>
+                        The <span><</span>select > element is used to create a drop-down list.
+
+                            The <span><</span>select > element is most often used in a form, to collect user input.
+                            
+                            The "name" attribute is needed to reference the form data after the form is submitted (if you omit the "name" attribute, no data from the drop-down list will be submitted).
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+                            <span><</span>label for="cars" >Choose a car: <br><span><</span>/label> <br><br>
+
+                            <span><</span>select name="cars" id="cars" > <br>
+                            <span><</span>option value="volvo" > Volvo <br><span><</span>/option >
+                            <br><span><</span>option value="saab" > Ford <br><span><</span>/option >
+                            <br><span><</span>option value="mercedes" >Mercedes <br><span><</span>/option >
+                            <br><span><</span>option value="audi" >Audi <br><span><</span>/option >
+                            <br><span><</span>option value="audi" >Subaru <br><span><</span>/option >
+                            <br><span><</span>/select >
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+
+                            <label for="cars">Choose a car:</label>
+
+                            <select name="cars" id="cars">
+                              <option value="volvo">Volvo</option>
+                              <option value="saab">Ford</option>
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                              <option value="audi">Subaru</option>
+                            </select>
+
+                    <br><br>
+                    </div>
+                    <br>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>textarea rows="" cols="" ><br> &nbsp;&nbsp;...<span><</span>/textarea ></h3>
+                    
+
+                    <p>
+                        The <span><</span>select > element is used to create a drop-down list.
+
+                            The <span><</span>select > element is most often used in a form, to collect user input.
+                            
+                            The "name" attribute is needed to reference the form data after the form is submitted (if you omit the "name" attribute, no data from the drop-down list will be submitted).
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+
+                        <span><</span>label for="review" > Write your <br>&nbsp;&nbsp;&nbsp;&nbsp;feedback below :<span><</span>/label >
+                        <br><br>
+                        <span><</span>textarea id="review" name="review"<br>&nbsp;&nbsp;&nbsp;&nbsp;rows="6" cols="33"  placeholder=<br>&nbsp;&nbsp;&nbsp;&nbsp;"Say Something....." >
+                        </textarea>
+                        <br><br>
+
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+
+                    <label for="review">Write your feedback below :</label> <br>
+
+                    <textarea id="review" name="review" rows="6" cols="33" placeholder="Say Something....."></textarea>
+
+                    <br><br>
+                    </div>
+                    <br>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>datalist id=".." >...<span><</span>/datalist ></h3>
+                    
+
+                    <p>
+                        The <span><</span>datalist > tag specifies a list of pre-defined options for an <span><</span>input > element. <br>
+
+                        The <span><</span>datalist > tag is used to provide an "autocomplete" feature for <span><</span>input > elements. Users will see a drop-down list of pre-defined options as they input data. <br>
+                            
+                        The <span><</span>datalist > element's id attribute must be equal to the <span><</span>input > element's list attribute (this binds them together).
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+
+                    <span><</span>form onSubmit="return false;"> <br>
+                    <span><</span>label for="country"> <br>&nbsp;&nbsp;&nbsp;&nbsp;Choose Country<span><</span>/label> <br>
+                    <span><</span>input list="countries"<br>&nbsp;&nbsp;&nbsp;&nbsp;name="country" id="country"> <br>
+                    <span><</span>datalist id="countries"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>option value="USA"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>option value="India"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>option value="Canada"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>option value="United Kingdom"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span><</span>option value="France"><br>
+                    <span><</span>/datalist> <br>
+                    <span><</span>/form>
+
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+
+                    <form onSubmit="return false;">
+                        <label for="country">Choose Country</label>
+                        <input list="countries" name="country" id="country">
+                        <datalist id="countries">
+                          <option value="USA">
+                          <option value="India">
+                          <option value="Canada">
+                          <option value="United Kingdom">
+                          <option value="France">
+                        </datalist>
+                    </form>
+
+                    <br>
+                    </div>
+                    <br>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>fieldset > ...<span><</span>/fieldset ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>legend > ...<span><</span>/legend ></h3>
+                    
+
+                    <p>
+                        The <span><</span>fieldset > tag is used to group related elements in a form. <br>
+
+                        The <span><</span>fieldset > tag draws a box around the related elements.
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+
+                    <span><</span>form > <br> <br>
+                    <span><</span>fieldset> <br>
+                    <span><</span>legend >Personalia:<span><</span>/legend > <br>
+                    <span><</span>label for="fname">First name: <br><span><</span>/label > <br>
+                    <span><</span>input type="text" id="fname" <br>&nbsp;&nbsp;&nbsp;&nbsp;name="fname"><br>
+                    <span><</span>label for="lname">Last name: <br><span><</span>/label > <br>
+                    <span><</span>input type="text" id="lname" <br>&nbsp;&nbsp;&nbsp;&nbsp;name="lname"><br>
+                    <span><</span>label for="email">Email:<span><</span>/label >
+                    <span><</span>input type="email" id="email" <br>&nbsp;&nbsp;&nbsp;&nbsp;name="email"><br>
+                    <span><</span>label for="birthday">Birthday: <br><span><</span>/label > <br>
+                    <span><</span>input type="date" id="birthday" <br>&nbsp;&nbsp;&nbsp;&nbsp;name="birthday"><br>
+                    <span><</span>input type="button" value="Submit"> <br>
+                    <span><</span>/fieldset> <br><br>
+                    <span><</span>/form>
+
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+
+                    <form >
+                        <fieldset>
+                         <legend>Personalia:</legend>
+                         <label for="fname">First name:</label>
+                         <input type="text" id="fname" name="fname" placeholder="Mayur"><br>
+                         <label for="lname">Last name:</label>
+                         <input type="text" id="lname" name="lname" placeholder="Borgude"><br>
+                         <label for="email">Email:</label>
+                         <input type="email" id="email" name="email" placeholder="mayborg121@gmail.com"><br>
+                         <label for="birthday">Birthday:</label>
+                         <input type="date" id="birthday" name="birthday"><br>
+                         <input type="button" value="Submit">
+                        </fieldset>
+                    </form>
+
+                    <br>
+                    </div>
+                    <br>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>output > ...<span><</span>/output ></h3>
+                    
+
+                    <p>
+                        The <span><</span>output > tag is used to represent the result of a calculation (like one performed by a script).
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+
+                    <span><</span>form oninput="x.value=<br>&nbsp;&nbsp;&nbsp;&nbsp;parseInt(a.value)+parseInt(b.value)" > <br><br>
+                        <span><</span>input type="range" id="a" <br>&nbsp;&nbsp;&nbsp;&nbsp;value="25" ><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <br> <span><</span>input type="range" id="b" <br>&nbsp;&nbsp;&nbsp;&nbsp;value="50" > 
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp; = <br>
+                       <span><</span>output name="x" for="a b" <br>&nbsp;&nbsp;&nbsp;&nbsp;style="background-color: <br>&nbsp;&nbsp;&nbsp;&nbsp;aquamarine;font-weight: bold;" > <br><span><</span>/output >
+                    <br><br><span><</span>/form>
+
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+
+                    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                        <input type="range" id="a" value="25"><br>
+                        + <br><input type="range" id="b" value="50"> 
+                        <br> =
+                        <output name="x" for="a b" style="background-color: aquamarine;font-weight: bold;"></output>
+                    </form>
+
+                    <br>
+                    </div>
+                    <br>
+                </li>
+
+
+            </ol>
+        </div>
+        <br>
+
+        <div id="MetaInfoTags" style="padding: 0; margin: 0;">
+            <h3>MetaInfo Tags -</h3>
+            <ol style="margin-left: -20px;margin-top: 10px;">
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>head > ...<span><</span>/head ></h3>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>meta name=".." content=".." ></h3>
+
+                    <p>
+                        The<span><</span>head > element is a container for metadata (data about data) and is placed between the<span><</span>html > tag and the<span><</span>body > tag.
+                        <br>
+                        Metadata is data about the HTML document. Metadata is not displayed.
+                        <br>
+                        Metadata typically define the document title, character set, styles, scripts, and other meta information.
+                        <br>  
+                        The following elements can go inside the<span><</span>head > element:
+                        <br><span><</span>title > (required)
+                        <br><span><</span>style >
+                        <br><span><</span>base >
+                        <br><span><</span>link >
+                        <br><span><</span>meta >
+                        <br><span><</span>script >
+                        <br><span><</span>noscript >     
+                    </p>
+
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+
+                    <span><</span>head > <br>
+                    <Span><</Span>title > HTML | Examples<span><</span>/title ><br>
+                    <span><</span>meta charset="UTF-8" > <br>
+                    <span><</span>meta name="Keywords" <br>&nbsp;&nbsp;&nbsp;&nbsp;content="HTML,Web,CSS"> <br>
+                    <span><</span>/head > 
+                    
+                    <br><br>
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+
+                    <p>
+                        *** Its Implemented in this page ***
+                    </p>
+
+                    <br>
+                    </div>
+
+                </li>
+                <br>
+
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>base href=".." target=".." ></h3>
+
+                    <p>
+                        The <span><</span>base > tag specifies the base URL and/or target for all relative URLs in a document.
+
+                        The <span><</span>base > tag must have either an href or a target attribute present, or both.
+
+                        There can only be one single <span><</span>base > element in a document, and it must be inside the <span><</span>head > element.     
+                    </p>
+
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+
+                        <span><</span>head >
+                            <br><span><</span>base href="https://mayborg121. <br>&nbsp;&nbsp;&nbsp;&nbsp;github.io/" target="_blank" >
+                        <br><span><</span>/head > 
+                    
+                    <br><br>
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+
+                    <p>
+                        *** Its Implemented in this page ***
+                    </p>
+
+                    <br>
+                    </div>
+
+
+                </li>
+
+            </ol>
+        </div>
+        <br>
+
+        <div id="ProgrammingTags" style="padding: 0; margin: 0;">
+            <h3>Programming Tags -</h3>
+            <ol style="margin-left: -20px;margin-top: 10px;">
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>script > ...<span><</span>/script ></h3>
+
+                    <p>
+                        The <span><</span>script > tag is used to embed a client-side script (JavaScript).
+                        <br>
+                        The <span><</span>script > element either contains scripting statements, or it points to an external script file through the src attribute.
+                        <br>
+                        Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+
+                        <span><</span>p id="demo" ><span><</span>/p > <br>
+                        <span><</span>script > 
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById 
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;("demo").innerHTML = 
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;"Hello JavaScript!";<br>
+                        <span><</span>/script >  
+                    
+                    <br><br>
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+
+                        <p id="demo"></p>
+                        <script>
+                            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+                        </script> 
+                        
+
+                    <br>
+                    </div>
+
+                </li>
+                <br>
+
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>embed type=".." src=".." ></h3>
+
+                    <p>
+                        The <span><</span>embed > tag in HTML is used for embedding external applications which are generally multimedia content like audio or video into an HTML document. It is used as a container for embedding plug-ins such as Flash animations. This tag is a new tag in HTML 5, and it requires only a starting tag.
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+
+                        <span><</span>embed src="https://media4.giphy.com
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/media/v1.Y2lkPTc5MGI3N<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jExb2YwNHo1bzBlbHQxN<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W5vbjAwdDF4ZzNoN3BhbWY4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aGM4N2VuMWdvMSZlcD12MV9<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pbnRlcm5hbF9naWZfYnlfaWQm<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y3Q9Zw/3dhmyq6EKw2x7eFt4X<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/giphy.webp"
+                        <br> type="image/webp" width="290px" > 
+                    
+                    <br><br>
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+
+                        <embed src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2YwNHo1bzBlbHQxNW5vbjAwdDF4ZzNoN3BhbWY4aGM4N2VuMWdvMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3dhmyq6EKw2x7eFt4X/giphy.webp" type="image/webp" width="335px">
+                        
+
+                    <br>
+                    </div>
+
+                </li>
+                <br>
+
+
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>object data=".." width=".." ></h3>
+
+                    <p>
+                        The <span><</span>embed > tag in HTML is used for embedding external applications which are generally multimedia content like audio or video into an HTML document. It is used as a container for embedding plug-ins such as Flash animations. This tag is a new tag in HTML 5, and it requires only a starting tag.
+                    </p>
+
+                    <p style="background-color: #b7f3d3;"><b>Example :   
+                    </b><br>
+
+                    <span><</span>object data="https://media2.giphy.com<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/media/v1.Y2lkPTc5MGI3NjE<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xZG5qaWY2N2xvZDlyY3ozYWF<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;obGxoM3I3eDYwcWo4b3N2ZzJ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4NHp4MiZlcD12MV9pbnRlcm5<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hbF9naWZfYnlfaWQmY3Q9Zw/<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RHEqKwRZDwFKE/200.webp"
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width="300px" >
+                    <br>
+                    <span><</span>/object >
+                    
+                    <br><br>
+                    </p>
+                    
+                    <div style="background-color: #eff3b7;"><b>OUTPUT :
+                    </b><br>
+
+                        <object data="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG5qaWY2N2xvZDlyY3ozYWFobGxoM3I3eDYwcWo4b3N2ZzJ4NHp4MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RHEqKwRZDwFKE/200.webp"
+                        width="335px">
+                        </object>
+                        
+                    <br>
+                    </div>
+                    
+                </li>
+
+            </ol>
+        </div>
+        <br>
+
+
+
+
+
+
+        <!--NOTE -->
+
+        <!-- <p style="padding-left: 5px; background-color: #eba1cd;">
+            <span style="font-weight: bold; font-size: 0.9rem;">Note:</span>
+            Always add the<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>label ></span> tag for best accessibility practices ! <br><span style="font-weight: bold; font-size: 0.9rem;">Tip:</span> Use the<span style="color: rgb(3, 66, 66); font-weight: bold;"><span><</span>progress ></span>tag in conjunction with JavaScript to display the progress of a task.
+        </p> -->
+
+        <!-- 
+
+        <!-- LIST -->
+
+        <!-- <div id="Formatting Tags" style="padding: 0; margin: 0;">
+            <h3>Image Tags -</h3>
+            <ol style="margin-left: -20px;margin-top: 10px;">
+                <li>
+                    <h3 style="color: rgb(9, 82, 146);background-color: #c2f7f1;"> <span><</span>img src="..."></h3>
+                </li>
+
+            </ol>
+        </div> -->
+    </section>
+    <hr>
+    <section id="HTML_Attributes">
+        <h2>
+            HTML Attributes
+        </h2>
+        <p>
+            HTML attributes provide additional information about HTML elements. They are always included in the opening tag of an element and usually come in name/value pairs like <span style="color: rgb(3, 91, 95);font-weight: bold;">name="value"</span>.
+            <br>
+        </p>
+        <div>
+            <ol style="margin-left: -20px;margin-top: 10px;">
+                
+                <li>
+                    <h3 style="color: rgb(9, 133, 57);background-color: #c2f7d6;" title=" HTML attributes ">&nbsp; id="abc"</h3>
+                    <p>
+                        The id attribute is a unique identifier that is used to specify the document. It is used by CSS and JavaScript to perform a certain task for a unique element. In CSS, the id attribute is written using the # symbol followed by id.
+                    </p>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 133, 57);background-color: #c2f7d6;" title=" HTML attributes ">&nbsp; class=" notes "</h3>
+                    <p>
+                        The class attribute is used to specify one or more class names for an HTML element. The class attribute can be used on any HTML element. The class name can be used by CSS and JavaScript to perform certain tasks for elements with the specified class name. The class name in CSS stylesheet using “.” symbol.
+                    </p>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 133, 57);background-color: #c2f7d6;">&nbsp; href =" https://abc.xyz "</h3>
+                    <p>
+                        The <span><</span>a > tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to.
+                    </p>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 133, 57);background-color: #c2f7d6;">&nbsp; src =" \img\pic.jpg "</h3>
+                    <p>
+                        The <span><</span>img > tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed.
+                    </p>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 133, 57);background-color: #c2f7d6;">&nbsp; width="300" height="300"</h3>
+                    <p>
+                        The <span></span>img > tag should also contain the width and height attributes, which specify the width and height of the image (in pixels).
+                    </p>
+                </li>
+                <br>
+
+
+                <li>
+                    <h3 style="color: rgb(9, 133, 57);background-color: #c2f7d6;">&nbsp; alt="Boy on roof tops."</h3>
+                    <p>
+                        The required alt attribute for the <span><</span>img > tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+                    </p>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 133, 57);background-color: #c2f7d6;">&nbsp; style=" color: #c2f7d6; "</h3>
+                    <p>
+                        The style attribute is used to add styles to an element, such as color, font, size, and more.its an inline CSS integration.
+                    </p>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 133, 57);background-color: #c2f7d6;">&nbsp; lang=" en "</h3>
+                    <p>
+                        You should always include the lang attribute inside the <span><</span>html > tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+                    </p>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 133, 57);background-color: #c2f7d6;" title=" HTML attributes ">&nbsp; title=" HTML attributes "</h3>
+                    <p>
+                        The title attribute defines some extra information about an element.The value of the title attribute will be displayed as a tooltip when you mouse over the element.
+                    </p>
+                </li>
+                <br>
+
+                <li>
+                    <h3 style="color: rgb(9, 133, 57);background-color: #c2f7d6;">&nbsp; <span><</span>br > & <span><</span>hr ></h3>
+                    <p>
+                        These are not attributes but rather formatting tags<span><</span>br > is used to give a line break which adds a new line character. and<span><</span>hr > is used to add horizontal rule/line. 
+                    </p>
+                </li>
+                <br>
+
+                
+            </ol>
+        </div>
+    </section>
+    <hr>
+
+    <section id="HTML_Concepts">
+        <div>
+            <h2>What is Favicon ?</h2>
+            <p>A favicon is a small image displayed next to the page title in the browser tab.A favicon, also known as a shortcut icon, website icon, tab icon, URL icon, or bookmark icon, is a file containing one or more small icons associated with a particular website or web page.</p>
+
+        </div>
+
+        <p style="background-color: #b7f3d3;"><b>Example :   
+        </b><br>
+
+        <span><</span>link rel="icon" type="image/x-icon" <br>&nbsp;&nbsp;&nbsp;&nbsp;href="/img/html.ico" >
+        
+        <br><br>
+        </p>
+        
+        <div style="background-color: #eff3b7;"><b>OUTPUT :
+        </b><br>
+
+        <p style="color: #fd2200;">*** look at the Tab title ***</p>
+            
+        <br>
+        </div>
+        <br>
+        <hr>
+        
+        <div>
+            <h2>Responsive HTML | Viewport</h2>
+            <p>
+                The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen. <br>
+                HTML5 introduced a method to let web designers take control over the viewport, through the <span><</span>meta > tag. <br>You should include the following <span><</span>meta > viewport element in all your web pages <br>
+                The viewport is the user's visible area of a web page. <br>
+                
+            </p>
+
+            <p style="background-color: #b7f3d3;"><b>Example :   
+            </b><br>
+    
+            <span><</span>meta name="viewport" <br>&nbsp;&nbsp;&nbsp;&nbsp;content="width=device-width,<br>&nbsp;&nbsp;&nbsp;&nbsp;initial-scale=1.0" >
+            
+            <br><br>
+            </p>
+
+        </div>
+        <br>
+        <hr>
+
+        <div>
+            <h2>What is XHTML ?</h2>
+            <p>
+                XHTML or EXtensible HyperText Markup Language is a mix of HTML and XML, very similar to HTML but stricter. It’s like a rulebook for creating web pages that browsers easily understand. Unlike HTML, you have to be careful and follow the rules exactly. Most browsers support it. Just think of it as a more precise way to write web code. 
+                
+            </p>
+            <h3>Why XHTML ?</h3>
+            <p>
+                XML is a markup language where all documents must be marked up correctly (be "well-formed").
+            </p>
+            <p>
+                XHTML was developed to make HTML more extensible and flexible to work with other data formats (such as XML). In addition, browsers ignore errors in HTML pages, and try to display the website even if it has some errors in the markup. So XHTML comes with a much stricter error handling.
+            </p>
+
+
+        </div>
+        <br>
+        <hr>
+
+
+
+    </section>
+
+
+
+<footer>
+
+    <div style="text-align: center; background-color: #b0f1ef9a;">
+        <p>
+            Wanna Connect? here we go - <a href="mailto:mayurborgude@gmail.com">@Mayur</a>
+        </p>
+    </div>
+    <hr>
+
+    <div style="text-align: center; background-color: #f5aaf944;height: 40px; margin: -6px -20px;">
+    <P style="padding: 12px;">
+        Made With ❤️ by <a href="https://github.com/Mayborg121" style="text-decoration: none;color: #66053f;font-weight: bold;">MAYBORG</a> <span style="border-left: 2px solid black; height: 7px;"></span> &nbsp;© 2024 <br>
+
+    </P>
+    </div>
+
+</footer>
+
+</body> 
+</html>
