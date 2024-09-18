@@ -68,7 +68,7 @@ If you would like to contribute:
 
 ## Contact
 
-Feel free to reach out if you have any questions or suggestions about this project! You can connect with me on GitHub or via email at mailto:mayurborgude@gmail.com.
+Feel free to reach out if you have any questions or suggestions about this project! You can connect with me on GitHub or via email at mayurborgude@gmail.com.
 
 ## License
 
